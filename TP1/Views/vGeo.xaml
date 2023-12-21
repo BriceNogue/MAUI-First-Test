@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TP1.Views.vGeo"
+             Title="vGeo">
+    <VerticalStackLayout>
+        <Button 
+            x:Name="BtnGeo" 
+            Text="Geolocalisation"
+            WidthRequest="200"
+            Margin="0,50,0,0"
+            Clicked="Get_Localisation"/>
+
+        <Button 
+            x:Name="BtnAnnul" 
+            Text="Annulation"
+            WidthRequest="200"
+            Margin="0,15,0,0"
+            Background="Red"
+            Clicked="CancelLocation"/>
+
+        <Label
+            x:Name="LabelLongitude"
+            Text="Longitude"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            Margin="0,15,0,0"/>
+
+        <Label
+            x:Name="LabelLatitude"
+            Text="Latitude"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            Margin="0,15,0,0"/>
+
+        <Label
+            x:Name="LabelAltitude"
+            Text="Altitude"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            Margin="0,15,0,0"/>
+
+
+    </VerticalStackLayout>
+</ContentPage>

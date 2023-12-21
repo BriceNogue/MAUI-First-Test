@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="TP1.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:TP1"
+    xmlns:views="clr-namespace:TP1.Views"
+    Shell.FlyoutBehavior="Disabled">
+
+    <TabBar>
+
+        <ShellContent
+             Title="Accueil"
+             ContentTemplate="{DataTemplate local:MainPage}"
+             Icon="icon_notes" />
+
+        <ShellContent
+             Title="A Propos"
+             ContentTemplate="{DataTemplate local:APropos}"
+             Icon="icon_about" />
+
+        <ShellContent
+            Title="Infomation"
+            ContentTemplate="{DataTemplate views:vPhone}"
+            Icon="information0"/>
+
+        <ShellContent 
+            Title="Geolocalisation"
+            ContentTemplate="{DataTemplate views:vGeo}"
+            Icon="maps"/>
+
+
+    </TabBar>
+
+
+</Shell>
